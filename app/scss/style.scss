@@ -1697,6 +1697,17 @@
                 justify-content: flex-end;
                 -ms-flex-pack: end;
             }
+            @media screen and (max-width:1024px) {
+                .prev-arrow,
+                .next-arrow {
+                    position: absolute;
+                    bottom: 95% !important;
+                    opacity: 0.5;
+                }
+                .prev-arrow {
+                    left: 45.5% !important;
+                }
+            }
             @media screen and (max-width:768px) {
                 .fs64 {
                     font-size: 3rem;
