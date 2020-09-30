@@ -1249,24 +1249,24 @@ section a:hover {
     .section_banner--last .position--x {
       background-position-x: 60% !important; } }
 
-.section_image .image__padding--height {
-  padding-top: 80px;
-  padding-bottom: 80px; }
-
-.section_image img {
-  border-radius: 24px; }
-
-.section_image .text-attention {
-  font-weight: bold;
-  color: #535fb3; }
-
-@media screen and (max-width: 576px) {
-  .section_image .col-md-3 {
-    text-align: center; }
-    .section_image .col-md-3 .pb-4 {
-      padding-bottom: 16px !important; }
-  .section_image .pb-16 {
-    padding-bottom: 16px; } }
+.section_image {
+  box-shadow: 0 30px 100px 0 rgba(0, 0, 0, 0.07);
+  background-color: #ffffff; }
+  .section_image .image__padding--height {
+    padding-top: 80px;
+    padding-bottom: 80px; }
+  .section_image img {
+    border-radius: 24px; }
+  .section_image .text-attention {
+    font-weight: bold;
+    color: #535fb3; }
+  @media screen and (max-width: 576px) {
+    .section_image .col-md-3 {
+      text-align: center; }
+      .section_image .col-md-3 .pb-4 {
+        padding-bottom: 16px !important; }
+    .section_image .pb-16 {
+      padding-bottom: 16px; } }
 
 footer .icon-spacing {
   padding-left: 8px;
@@ -1308,6 +1308,7 @@ footer .fontSize-14 {
   color: #000000; }
 
 .customerTestimonials {
+  background-color: #f3f4fa;
   /* Fading animation */
   /* On smaller screens, decrease text size */ }
   .customerTestimonials .customerTestimonials__padding--height {
@@ -1317,6 +1318,10 @@ footer .fontSize-14 {
     color: #000000;
     line-height: 1.5;
     letter-spacing: 1px; }
+  .customerTestimonials .pt-8 {
+    padding-top: 80px; }
+  .customerTestimonials .pb-8 {
+    padding-bottom: 80px; }
   .customerTestimonials img {
     padding-left: 24px;
     padding-right: 24px;
