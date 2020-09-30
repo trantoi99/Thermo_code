@@ -431,6 +431,10 @@ section a:hover {
   .section_doctor .text-attention {
     font-weight: bold;
     color: #535fb3; }
+  @media screen and (max-width: 576px) {
+    .section_doctor .row {
+      padding-left: 15px;
+      padding-right: 15px; } }
 
 .section_watch .watch__padding--height {
   padding-top: 80px;
