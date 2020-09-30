@@ -431,7 +431,7 @@ section a:hover {
   .section_doctor .text-attention {
     font-weight: bold;
     color: #535fb3; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 576px) {
     .section_doctor .row {
       text-align: center; } }
 
