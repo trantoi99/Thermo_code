@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermometer</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- magnific pop up js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js" integrity="sha512-C1zvdb9R55RAkl6xCLTPt+Wmcz6s+ccOvcr6G57lbm8M2fbgn2SUjUJbQ13fEyjuLViwe97uJvwa1EUf4F1Akw==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" />
+    <!-- MDB core JavaScript -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header class="masthead">
+        <nav class="navbar navbar-expand-lg navbar-dark shadow-none">
+            <a class="navbar-brand" href="#"><img src="css/img/Logo.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu_Medic" aria-controls="navbarMenu_Medic" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarMenu_Medic">
+                <ul class="navbar-nav ml-auto text-uppercase">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                               Home
+                            </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                                How to use</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                                Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                                Testimonial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                                Faqs</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="text-title__padding">
+                        <h1>
+                            Promptly detect the symptom of COVID-19
+                        </h1>
+                    </div>
+                    <div class="text-des__padding">
+                        <p>LayoutHub is an easy page builder that helps merchants quickly set up an online store.</p>
+                    </div>
+                    <a class="btn btn-danger" href="#">
+                        <div class="style--text">
+                            <img src="css/img/👈.png" alt="Buy"> Buy It Now
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-7">
+                    <img src="css/img/product.png" alt="product" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section_min">
+        <div class="container min__padding--height">
+            <div class="row">
+                <div class="col-lg-4 col--dashed d-flex flex-start">
+                    <img src="css/img/001-fast-delivery.png" class="img-fluid" alt="A">
+                    <div class="px-4">
+                        <div class="fontSize-18 py-1">
+                            Fast Delivery
+                        </div>
+                        <div class="fontSize-14">
+                            1-2 business day
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col--dashed d-flex flex-center">
+                    <img src="css/img/002-return.png" class="img-fluid" alt="B">
+                    <div class="px-4">
+                        <div class="fontSize-18 py-1">
+                            Free Return
+                        </div>
+                        <div class="fontSize-14">
+                            1 to 1 in 6 months
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex flex-end">
+                    <img src="css/img/Group.png" class="img-fluid" alt="C">
+                    <div class="px-4">
+                        <div class="fontSize-18 py-1">
+                            24/7 Support
+                        </div>
+                        <div class="fontSize-14">
+                            We’re happy to hear your
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_problem">
+        <div class="container problem__padding--height">
+            <div class="row">
+                <div class="col-md-5 my-auto">
+                    <div style="display: flex;">
+                        <div class="col-md-1">
+                            <div class="dflex py-4">
+                                <div class="col-md-1 dflex center pr-2">
+                                    <div class="circle__wrapper">
+                                        <div class="circle__inner">
+                                            <div class="circle__description">
+                                                <p>
+                                                    1
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-11 px-4">
+                            <h3>
+                                The COVID-19 is still <span class="text-attention"> very Complicated</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="py-2 mt-44 mb-22">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-11">
+                            <p class="ml-text">
+                                LayoutHub is an easy page builder that helps merchants quickly set up an online store with any kind of page type by using our library of pre-designed layouts and blocks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-6">
+                    <div class="img-fluid ml-center">
+                        <img src="css/img/Group 744.png" alt="chart" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 my-auto">
+                    <div style="display: flex;">
+                        <div class="col-md-1">
+                            <div class="dflex py-4">
+                                <div class="col-md-1 dflex center pr-2">
+                                    <div class="circle__wrapper">
+                                        <div class="circle__inner">
+                                            <div class="circle__description">
+                                                <p>
+                                                    2
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-11 px-4">
+                            <h3>
+                                but Only a Common Flu if
+                                <span class="text-attention">Detected Early</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="py-2 mt-44 mb-22">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-11">
+                            <p class="ml-text">
+                                LayoutHub is an easy page builder that helps merchants quickly set up an online store with any kind of page type by using our library of pre-designed layouts and blocks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-6">
+                    <div class="img-fluid ml-center">
+                        <img src="css/img/Rectangle 672.png" alt="flu" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 my-auto">
+                    <div style="display: flex;">
+                        <div class="col-md-1">
+                            <div class="dflex py-4">
+                                <div class="col-md-1 dflex center pr-2">
+                                    <div class="circle__wrapper">
+                                        <div class="circle__inner">
+                                            <div class="circle__description">
+                                                <p>
+                                                    3
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-11 px-4">
+                            <h3>
+                                One of the must-have Symptoms of COVID-19 is<span class="text-attention"> High Fever</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="py-2 mt-44 mb-22">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-11">
+                            <p class="ml-text">
+                                LayoutHub is an easy page builder that helps merchants quickly set up an online store with any kind of page type by using our library of pre-designed layouts and blocks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-6">
+                    <div class="img-fluid ml-center">
+                        <img src="css/img/Rectangle 673.png" class="img-fluid" alt="seek">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_Banner">
+        <div class="container">
+            <div class="banner__spacing">
+                <div class="row">
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-8">
+                        <h3>Timely Detection to Protect You and People Around <span class="text-attention">Thermoscan 7</span></h3>
+                    </div>
+                    <div class="col-md-2">
+                    </div>
+                </div>
+                <div class="pt-5">
+                    <a href="#" class="btn btn-danger">
+                        <div class="style--text">
+                            <img src="css/img/👈.png" alt="buy">Buy It Now
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_doctor">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="css/img/34853181.png" class="img-fluid" alt="Doctor">
+                </div>
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-5 section_doctor-col--pd">
+                    <div class="border-text">
+                        <h3 class="fontSize-32">
+                            Thermoscan 7 is Good and Has
+                            <span class="text-attention">High Accuracy</span>
+                        </h3>
+                        <p class="fontSize-16">
+                            LayoutHub is an easy page builder that helps merchants quickly set up an online store with any kind of page type by using our library of pre-designed layouts and blocks.
+                        </p>
+                        <div class="signature">
+                            <img src="css/img/image197.png" class="img-fluid" alt="signature">
+                        </div>
+                        <div class="d-flex">
+                            <div class="verticalLine"> </div>
+                            <div class="pl-3 pb-3">
+                                <div class="fontSize-18">
+                                    Dr. Daniel
+                                </div>
+                                <div class="fontSize-14">
+                                    DIRECTOR X HOSPITAL
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_watch">
+        <div class="wrapper about-us-section ">
+            <div class="container watch__padding--height">
+                <div class="row text-center flex-col pb-6 pt-6">
+                    <div>
+                        <h3>Watch this Video to</h3>
+                    </div>
+                    <div>
+                        <h3 class="text-attention">How to Use</h3>
+                    </div>
+                </div>
+                <div class="row align-center">
+                    <div class="wrap-video">
+                        <div class="video-content">
+                            <div class="btn-video">
+                                <a href="https://www.youtube.com/watch?v=6WN8lfVJuc0" class="video">
+                                    <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="60" cy="60" r="60" fill="white"></circle>
+                                    <path d="M80 60L50 80.7846L50 39.2154L80 60Z" fill="currentColor"></path>
+                                  </svg>
+                                </a>
+                            </div>
+                            <div class="poster">
+                                <img src="css/img/Rectangle613.png" alt="poster" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dflex padding-circle">
+                    <div class="circle-image">
+                        <div class="icon-spacing">
+                            <div class="icon">
+                                <img src="css/img/001-power-button.svg" alt="power">
+                            </div>
+                        </div>
+                        <div>
+                            <h4>
+                                Turn On Device and Choose Option
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="img-center">
+                        <img src="css/img/Arrow.png" alt="arrow" class="img-fluid">
+                    </div>
+                    <div class="circle-image">
+                        <div class="icon-spacing">
+                            <div class="icon">
+                                <img src="css/img/002-ear.svg" alt="ear">
+                            </div>
+                        </div>
+                        <div>
+                            <h4>
+                                Inserted Near Ear or Forehead
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="img-center">
+                        <img src="css/img/Arrow.png" alt="arrow" class="img-fluid">
+                    </div>
+                    <div class="circle-image">
+                        <div class="icon-spacing">
+                            <div class="icon ">
+                                <img src="css/img/Rectangle674.svg" alt="square">
+                            </div>
+                        </div>
+                        <div>
+                            <h4>
+                                Results Displayed on the Screen
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="dflex align-center pt-5 pb-6">
+                    <a href="#" class="btn btn-danger">
+                        <div class="style--text">
+                            <img src="css/img/👈.png" alt="buy">Buy It Now
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reviewMachine">
+        <div class="container reviewMachine__padding--height">
+            <div class="text-center py-5">
+                <div class="fontSize-32">
+                    This Thermometer has
+                    <div>
+                        <span class="text-attention">
+                            Special Features
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="dflex">
+                <div class="col-left">
+                    <div class="col-item--left border-bottom">
+                        <div class="fs20--red">
+                            01.
+                        </div>
+                        <div class="fs20--black">
+                            Lens Filter
+                        </div>
+                        <div class="fontSize-16">
+                            Braun Thermoscan 7 IRT6520 Thermometer with 20 Lens Filters.
+                        </div>
+                    </div>
+                    <div class="col-left__item border-bottom">
+                        <div class="fs20--red">
+                            02.
+                        </div>
+                        <div class="fs20--black">
+                            Quick Response
+                        </div>
+                        <div class="fontSize-16">
+                            Braun ThermoScan Electronic Ear Thermometer measures temperature in the ear in just one second and beeps when ready.
+                        </div>
+                    </div>
+                    <div class="col-left__item">
+                        <div class="fs20--red">
+                            03.
+                        </div>
+                        <div class="fs20--black">
+                            Includes Batteries
+                        </div>
+                        <div class="fontSize-16">
+                            Battery life up to 2000 hours
+                        </div>
+                    </div>
+                </div>
+                <div class="col-center">
+                    <img src="css/img/ImgMachineOne.png" class="img-fluid">
+                </div>
+                <div class="col-right">
+                    <div class="col-right__item border-bottom">
+                        <div class="fs20--red">
+                            04.
+                        </div>
+                        <div class="fs20--black">
+                            Easy to Use
+                        </div>
+                        <div class="fontSize-16">
+                            Recalls last number taken for ease of use.
+                        </div>
+                    </div>
+                    <div class="col-right__item border-bottom">
+                        <div class="fs20--red">
+                            05.
+                        </div>
+                        <div class="fs20--black">
+                            ExactTemp Technology
+                        </div>
+                        <div class="fontSize-16">
+                            Lens filters are designed for use with the Braun Ear Thermometer with ExactTemp technology.
+                        </div>
+                    </div>
+                    <div class="col-right__item">
+                        <div class="fs20--red">
+                            06.
+                        </div>
+                        <div class="fs20--black">
+                            Patented Technology
+                        </div>
+                        <div class="fontSize-16">
+                            An age adjustable fever guidance with a colour coded display and a night light
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reviewMachine_next">
+        <div class="container reviewMachineNext__padding--height">
+            <div class="row pb-4 ">
+                <div class="col-md-5 my-auto">
+                    <div class="fontSize-32">
+                        Age Precision Fever Guidance
+                    </div>
+                    <div class="fontSize-16">
+                        The Braun ThermoScan 7 with Age Precision takes the guesswork out of interpreting your child’s temperature. Easily set the age (0-3months, 3-36months, 36+months)
+                    </div>
+                </div>
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-5 image-order-1">
+                    <img src="css/img/ImgGui.png" class="img-fluid " alt="Gui">
+                </div>
+            </div>
+            <div class="row py-4">
+                <div class="col-md-5">
+                    <img src="css/img/ImgMachine.png" class="img-fluid" alt="Machine">
+                </div>
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-5 my-auto mx-auto">
+                    <div class="fontSize-32">
+                        Pre-warmed tip and Exact Temp
+                    </div>
+                    <div class="fontSize-16">
+                        Whereas the tip of other thermometers can cool the area within the ear where the temperature is being measured and result in variable readings, the tip on the ThermoScan 5 is pre-warmed before use, ensuring professional accuracy . The pre-warmed tip also
+                        makes for a more pleasant experience for little ones and is suitable for use with newborns.
+                        <div class="pt-4">
+                            Patented ExacTemp positioning system confirms good position in the ear with a light and a beep.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-4">
+                <div class="col-md-5 my-auto">
+                    <div class="fontSize-32">
+                        Stores the Last 9 Temperature Readings
+                    </div>
+                    <div class="fontSize-16">
+                        Braun ThermoScan 7 features a large LCD display with a nightlight which makes it easy to take the temperature when its dark, reducing the risk of waking the child up.
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-5 image-order-2">
+                    <img src="css/img/ImgCare.png" class="img-fluid " alt="Care">
+                </div>
+            </div>
+            <div class="row py-4">
+                <div class="col-md-5">
+                    <img src="css/img/ImgBraun.png" class="img-fluid" alt="Braun">
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-5 my-auto">
+                    <div class="justify-content-center">
+                        <div class="fontSize-32">
+                            Disposable Hygienic Probe Covers
+                        </div>
+                        <div class="fontSize-16">
+                            Designed so you can easily switch between users without having to spend time cleaning the probe. Use a clean disposable hygienic lens filter with each measurement:
+                            <div class="pt-4">
+                                1) To maintain hygiene.
+                            </div>
+                            <div>
+                                2) To protect your child from cross-contamination.
+                            </div>
+                            <div>
+                                3) To ensure earwax residues do not impact accuracy of the reading.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="section_Banner--Middle">
+        <div class="container">
+            <div class="bannerkid--border">
+                <div class="row set--display">
+                    <div class="col-md-5">
+                        <h3>
+                            Know Inside Your Kid with 5 Seconds
+                        </h3>
+                    </div>
+                    <div class="col-md-7">
+
+                    </div>
+                </div>
+                <div class=" pb-4">
+                    <a href="#" class="btn btn-danger ">
+                        <div class="style--text">
+                            <img src="css/img/👈.png" alt="buy">Buy It Now
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="customerTestimonials customerTestimonials__padding--height">
+        <div class="container">
+            <div class="fontSize-32 text-center py-5">
+                Customer
+                <div>
+                    <span class="text-attention">
+                        Testimonials
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex slider">
+            <div class="col-md-4">
+                <div class="testiCarousel">
+                    <div class="fs20">
+                        I liked everything about it. Seemed a little pricey, but it gives quick results and it seems like it is accurate.
+                    </div>
+                    <img src="css/img/EllipseAvt110.svg" class="img-fluid" alt="Avatar">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <div class="fontSize-18">Ed McGuirk</div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="testiCarousel">
+                    <div class="fs20">
+                        My daughter recommended this product. It is practical, accurate, and easy to read. Braun Technology will never disappoint you. </div>
+                    <img src="css/img/EllipseAvt109.svg" class="img-fluid" alt="Avatar">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <div class="fontSize-18">Frank Gallaghers</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testiCarousel">
+                    <div class="fs20">
+                        The temperature reading is fast and reliable. Delivery was a bit slow but expected during this COVID-19 period.
+                    </div>
+                    <img src="css/img/EllipseAvt111.svg" class="img-fluid" alt="Avatar">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <div class="fontSize-18">Kelvin</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testiCarousel">
+                    <div class="fs20">
+                        I liked everything about it. Seemed a little pricey, but it gives quick results and it seems like it is accurate.
+                    </div>
+                    <img src="css/img/EllipseAvt109.svg" class="img-fluid" alt="Avatar">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <div class="fontSize-18">Ed McGuirk</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testiCarousel">
+                    <div class="fs20">
+                        I liked everything about it. Seemed a little pricey, but it gives quick results and it seems like it is accurate.
+                    </div>
+                    <img src="css/img/EllipseAvt109.svg" class="img-fluid" alt="Avatar">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <div class="fontSize-18">Ed McGuirk</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="py-4">
+                <hr>
+            </div>
+        </div>
+        <div class="container">
+            <!-- Grid row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="dflex-start">
+                        <div class="fs64 pr-3">
+                            10K+
+                        </div>
+                        <div>
+                            <div class="fontSize-16 py-1">
+                                SATATISFIED
+                            </div>
+                            <div class="fontSize-16 py-1">
+                                CUSTOMERS
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="dflex-center">
+                        <div class="fs64 pr-3">
+                            20+
+                        </div>
+                        <div>
+                            <div class="fontSize-16 py-1">
+                                WINNING
+                            </div>
+                            <div class="fontSize-16 py-1">
+                                AWARDS
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="dflex-end">
+                        <div class="fs64 pr-3">
+                            1000+
+                        </div>
+                        <div>
+                            <div class="fontSize-16 py-1">
+                                WINNING
+                            </div>
+                            <div class="fontSize-16 py-1">
+                                AWARDS
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="section_image">
+        <div class="container image__padding--height">
+            <div class="text-center fontSize-32 pb-5">
+                See
+                <div>
+                    <span class="text-attention">They Use</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="css/img/Rectangle628.png" class="img-fluid pb-4" alt="first">
+                    <img src="css/img/Rectangle631.png" class="img-fluid pb-16" alt="fourth">
+                </div>
+                <div class="col-md-6">
+                    <img src="css/img/Rectangle627.png" class="img-fluid pb-16" alt="second">
+                </div>
+                <div class="col-md-3">
+                    <img src="css/img/Rectangle630.png" class="img-fluid pb-4" alt="third">
+                    <img src="css/img/Rectangle632.png" class="img-fluid" alt="fifth">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="detailProduct">
+        <div class="container detailProduct__padding--height">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class=" slide__label--relative">
+                        <div class="slide__label--absolute">
+                            <img src="css/img/discount.png" alt="discount" class="img-fluid">
+                        </div>
+                        <div class="slider-single pb-3">
+                            <div class="none__border">
+                                <img src="css/img/product_1.png" alt="1" class="img-fluid">
+                            </div>
+                            <div class="none__border">
+                                <img src="css/img/product_2.png" alt="2" class="img-fluid">
+                            </div>
+                            <div class="none__border">
+                                <img src="css/img/product_3.png" alt="3" class="img-fluid">
+                            </div>
+                            <div class="none__border">
+                                <img src="css/img/product_4.png" alt="4" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class=" slider-nav slider-nav__padding--top">
+                            <div class="slick-slide slick-current slick-active is-active">
+                                <img src="css/img/product_1.png" alt="1" class="img-fluid ">
+                            </div>
+                            <div>
+                                <img src="css/img/product_2.png" alt="2">
+                            </div>
+                            <div>
+                                <img src="css/img/product_3.png" alt="3">
+                            </div>
+                            <div>
+                                <img src="css/img/product_4.png" alt="4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <div class="fontSize-24 py-4">
+                        Braun Thermoscan 7 IRT6520 Thermometer + Bonus 40 ThermoScan Lens Filters
+                    </div>
+                    <div class="pb-3">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="d-flex align-items-baseline pb-3">
+                        <div class="fontSize-24--silver pr-2 text-center">
+                            <del>
+                             $100.00
+                           </del>
+                        </div>
+                        <div class="fontSize-32 px-2">
+                            $50.000
+                        </div>
+                        <div class="fontSize-16 px-1 text-center">
+                            Sale off 50%
+                        </div>
+                    </div>
+                    <div class="pb-2">
+                        <div class="detail__background text-center">
+                            <div class="d-flex justify-content-center py-3">
+                                <span class="px-1">🔥</span>
+                                <div class="fontSize-16--bold px-1">
+                                    HURRY UP!
+                                </div>
+                                <div class="fontSize-16--normal px-1">
+                                    This Sale will end after
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <div id="progressBar">
+                                    <div class="bar"></div>
+                                </div>
+                            </div>
+                            <div class="text-center fontSize-24--red">
+                                <ul>
+                                    <li><span id="days"></span></li>
+                                    <li><span>:</span></li>
+                                    <li><span id="hours"></span></li>
+                                    <li><span>:</span></li>
+                                    <li><span id="minutes"></span></li>
+                                    <li><span>:</span></li>
+                                    <li><span id="seconds"></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-2">
+                        <div class="d-flex align-items-baseline">
+                            <i class="lni lni-checkmark-circle pr-3" style="font-size: 16px; color: green;"></i>
+                            <div class="text-description">Braun Thermoscan 7 IRT6520 Thermometer with 40 Lens Filters.</div>
+                        </div>
+                        <div class="pt-2 d-flex align-items-baseline"><i class="lni lni-checkmark-circle pr-3" style="font-size: 16px; color: green;"></i>
+                            <div class="text-description">Includes batteries.</div>
+                        </div>
+                        <div class="pt-2 d-flex align-items-baseline"><i class="lni lni-checkmark-circle pr-3" style="font-size: 16px; color: green;"></i>
+                            <div class="text-description">Recalls last number taken for ease of use.</div>
+                        </div>
+                        <div class="pt-2 d-flex align-items-baseline"><i class="lni lni-checkmark-circle pr-3" style="font-size: 16px; color: green;"></i>
+                            <div class="text-description">Lens filters are designed for use with the Braun Ear Thermometer with ExactTemp technology.</div>
+                        </div>
+                        <div class="pt-2 d-flex align-items-baseline"><i class="lni lni-checkmark-circle pr-3" style="font-size: 16px; color: green;"></i>
+                            <div class="text-description">Braun ThermoScan Electronic Ear Thermometer measures temperature in the ear in just one second and beeps when ready.</div>
+                        </div>
+                    </div>
+                    <div class="gr__button d-flex align-items-center py-4">
+                        <div>
+                            <div class="quantity quantity--padding">
+                                <div class="quantity_group">
+                                    <button type="button" class="minus" onclick="decreaseValue()"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                                    <input id="theInput" type="number" size="4" class="input-text qty text" title="Qty" value="1" min="0" step="1">
+                                    <button type="button" class="plus" onclick="increaseValue()"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button_maxwidth">
+                            <a class="btn btn-danger" href="#">
+                                <div class="style--text">
+                                    <img src="css/img/👈.png" alt="Buy"> Buy It Now
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-center pt-2">
+                        <p class="guaranteed pb-3">GUARANTEED SAFE CHECKOUT</p>
+                        <img src="css/img/a-icon-payment.method.png" alt="guaranteed" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" section__faqs">
+        <div class="container faqs__padding--height">
+            <div class="text-center fontSize-32 py-4">
+                <div>
+                    Answer
+                </div>
+                <div>
+                    <span class="text-attention">Your Question</span>
+                </div>
+            </div>
+            <div class="py-5">
+                <div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                <h4>Is It Freeship?</h4>
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p>We started with humble beginnings — selling out of our basement and frantically shipping orders as soon as we woke up. We started with humble beginnings — selling out of our basement and frantically shipping .</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                <h4>Is this thermometer used for adults also?</h4>
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p>We started with humble beginnings — selling out of our basement and frantically shipping orders as soon as we woke up. We started with humble beginnings — selling out of our basement and frantically shipping .</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                <h4>How do you change this to farenheit?</h4>
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p>We started with humble beginnings — selling out of our basement and frantically shipping orders as soon as we woke up. We started with humble beginnings — selling out of our basement and frantically shipping .</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                <h4>Where is this thermometer manufactured?</h4>
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p>We started with humble beginnings — selling out of our basement and frantically shipping orders as soon as we woke up. We started with humble beginnings — selling out of our basement and frantically shipping .</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_banner--last">
+        <div class="container">
+            <div class="banner__border">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h3 class="text">
+                            Protect Your Body with One Button
+                        </h3>
+                    </div>
+                    <div class="col-md-7">
+
+                    </div>
+                </div>
+                <div class="btn-pd">
+                    <a href="#" class="btn btn-danger">
+                        <div class="style--text">
+                            <img src="css/img/👈.png" alt="buy">Buy It Now
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <div class="container">
+            <div class="text-center py-4">
+                <img src="css/img/footerLogo.png" alt="logo" class="img-fluid">
+            </div>
+            <div class="fontSize-14">
+                FOLLOW US ON
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="icon-spacing">
+                    <div class="icon">
+                        <div class="social">
+                            <a class="fa fa-facebook" aria-hidden="true" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="icon-spacing">
+                    <div class="icon">
+                        <div class="social">
+                            <a class="fa fa-instagram" aria-hidden="true" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="icon-spacing">
+                    <div class="icon">
+                        <div class="social">
+                            <a class="fa fa-linkedin" aria-hidden="true" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center pb-4 fontSize-14">
+                <div class="px-3">
+                    Contact Us
+                </div>
+                <div class="px-3">
+                    Terms & Conditions
+                </div>
+                <div class="px-3">
+                    Privacy Policy
+                </div>
+            </div>
+            <div class="pb-4">
+                ©2020 Copyright by LayoutHub. All rights reserved
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+    accordionItemHeaders.forEach(accordionItemHeader => {
+        accordionItemHeader.addEventListener("click", event => {
+            const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+            if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !== accordionItemHeader) {
+                currentlyActiveAccordionItemHeader.classList.toggle("active");
+                currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+            }
+            accordionItemHeader.classList.toggle("active");
+            const accordionItemBody = accordionItemHeader.nextElementSibling;
+            if (accordionItemHeader.classList.contains("active")) {
+                accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+            } else {
+                accordionItemBody.style.maxHeight = 0;
+            }
+        });
+    });
+</script>
+
+</html>
