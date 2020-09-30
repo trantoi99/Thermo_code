@@ -512,6 +512,11 @@
                 font-weight: bold;
                 color: #535fb3;
             }
+            @media screen and (max-width:768px) {
+                .row {
+                    text-align: center;
+                }
+            }
         }
         
         .section_watch {
