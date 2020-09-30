@@ -1351,7 +1351,7 @@ footer .fontSize-14 {
   .customerTestimonials .prev-arrow,
   .customerTestimonials .next-arrow {
     position: absolute;
-    bottom: 100%;
+    bottom: 95%;
     opacity: 0.5; }
   .customerTestimonials .prev-arrow {
     left: 46.5%; }
