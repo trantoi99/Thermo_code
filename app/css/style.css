@@ -213,6 +213,13 @@ header .col-md-7 img {
   .btn-danger .style--text img {
     padding-right: 16px; }
 
+.section_problem .dflex {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex; }
+
 .section_problem .problem__padding--height {
   padding-top: 80px;
   padding-bottom: 80px; }
