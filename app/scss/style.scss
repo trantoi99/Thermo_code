@@ -272,6 +272,10 @@
             }
         }
         
+        .btn:hover {
+            background-color: #c00;
+        }
+        
         .btn-danger {
             margin: 0 !important;
             width: 16rem;
@@ -778,21 +782,21 @@
                 }
                 10%,
                 20% {
-                    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-                    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+                    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -1.01deg);
+                    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -1.01deg);
                 }
                 30%,
                 50%,
                 70%,
                 90% {
-                    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-                    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+                    -webkit-transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, 1.01deg);
+                    transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, 1.01deg);
                 }
                 40%,
                 60%,
                 80% {
-                    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-                    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+                    -webkit-transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, -1.01deg);
+                    transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, -1.01deg);
                 }
                 100% {
                     -webkit-transform: scale3d(1, 1, 1);
@@ -807,24 +811,24 @@
                 }
                 10%,
                 20% {
-                    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-                    -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-                    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+                    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -1.01deg);
+                    -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -1.01deg);
+                    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -1.01deg);
                 }
                 30%,
                 50%,
                 70%,
                 90% {
-                    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-                    -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-                    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+                    -webkit-transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, 1.01deg);
+                    -ms-transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, 1.01deg);
+                    transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, 1.01deg);
                 }
                 40%,
                 60%,
                 80% {
-                    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-                    -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-                    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+                    -webkit-transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, -1.01deg);
+                    -ms-transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, -1.01deg);
+                    transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, -1.01deg);
                 }
                 100% {
                     -webkit-transform: scale3d(1, 1, 1);
@@ -1013,21 +1017,21 @@
                 }
                 10%,
                 20% {
-                    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-                    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+                    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -1.01deg);
+                    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -1.01deg);
                 }
                 30%,
                 50%,
                 70%,
                 90% {
-                    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-                    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+                    -webkit-transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, 1.01deg);
+                    transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, 1.01deg);
                 }
                 40%,
                 60%,
                 80% {
-                    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-                    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+                    -webkit-transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, -1.01deg);
+                    transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, -1.01deg);
                 }
                 100% {
                     -webkit-transform: scale3d(1, 1, 1);
@@ -1042,24 +1046,24 @@
                 }
                 10%,
                 20% {
-                    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-                    -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-                    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+                    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -1.01deg);
+                    -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -1.01deg);
+                    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -1.01deg);
                 }
                 30%,
                 50%,
                 70%,
                 90% {
-                    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-                    -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-                    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+                    -webkit-transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, 1.01deg);
+                    -ms-transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, 1.01deg);
+                    transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, 1.01deg);
                 }
                 40%,
                 60%,
                 80% {
-                    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-                    -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-                    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+                    -webkit-transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, -1.01deg);
+                    -ms-transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, -1.01deg);
+                    transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, -1.01deg);
                 }
                 100% {
                     -webkit-transform: scale3d(1, 1, 1);
@@ -1460,21 +1464,21 @@
                 }
                 10%,
                 20% {
-                    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-                    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+                    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -1.01deg);
+                    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -1.01deg);
                 }
                 30%,
                 50%,
                 70%,
                 90% {
-                    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-                    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+                    -webkit-transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, 1.01deg);
+                    transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, 1.01deg);
                 }
                 40%,
                 60%,
                 80% {
-                    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-                    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+                    -webkit-transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, -1.01deg);
+                    transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, -1.01deg);
                 }
                 100% {
                     -webkit-transform: scale3d(1, 1, 1);
@@ -1489,24 +1493,24 @@
                 }
                 10%,
                 20% {
-                    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-                    -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-                    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+                    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -1.01deg);
+                    -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -1.01deg);
+                    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -1.01deg);
                 }
                 30%,
                 50%,
                 70%,
                 90% {
-                    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-                    -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-                    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+                    -webkit-transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, 1.01deg);
+                    -ms-transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, 1.01deg);
+                    transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, 1.01deg);
                 }
                 40%,
                 60%,
                 80% {
-                    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-                    -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-                    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+                    -webkit-transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, -1.01deg);
+                    -ms-transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, -1.01deg);
+                    transform: scale3d(1.01, 1.01, 1.01) rotate3d(0, 0, 1, -1.01deg);
                 }
                 100% {
                     -webkit-transform: scale3d(1, 1, 1);
