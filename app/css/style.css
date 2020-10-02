@@ -1618,6 +1618,8 @@ footer .fontSize-14 {
 
 .detailProduct {
   /* hide quantity in input */ }
+  .detailProduct .style--text img {
+    width: 40px !important; }
   .detailProduct ul {
     padding: 0 !important; }
   .detailProduct .slider-nav__padding--top {

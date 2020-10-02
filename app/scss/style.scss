@@ -1981,6 +1981,11 @@
         }
         
         .detailProduct {
+            .style--text {
+                img {
+                    width: 40px !important;
+                }
+            }
             ul {
                 padding: 0 !important;
             }
