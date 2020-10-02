@@ -168,6 +168,9 @@
                 }
             }
             @media screen and (max-width:768px) {
+                h1 {
+                    font-size: 3rem;
+                }
                 .row {
                     text-align: center;
                     justify-content: center;
@@ -183,10 +186,16 @@
                 .col-md-5 {
                     padding-bottom: 32px;
                 }
+                .text-des__padding {
+                    padding-bottom: 32px;
+                }
             }
             @media screen and (max-width:576px) {
                 .text-title__padding {
                     padding-top: 60px;
+                }
+                h1 {
+                    font-size: 2.5rem;
                 }
             }
         }
@@ -231,8 +240,9 @@
                 .flex-start,
                 .flex-end,
                 .flex-center {
-                    text-align: center;
-                    justify-content: center;
+                    text-align: left;
+                    justify-content: flex-start;
+                    padding-bottom: 5px;
                 }
             }
         }
@@ -420,7 +430,23 @@
                     margin-left: 0;
                 }
             }
-            @media screen and (max-width:576px) {}
+            @media screen and(max-width:576px) {}
+            @media screen and (max-width:340px) {
+                .dflex {
+                    flex-direction: column;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    .col-md-1 {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                    .col-md-11 {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
         }
         
         .section_Banner {
@@ -867,7 +893,6 @@
             .pd-6 {
                 padding-top: 40px;
             }
-            min-height: 447px;
             height: 50vh;
             background-size: cover;
             background-image: url("img/ImgChild.png");
@@ -1244,6 +1269,12 @@
                 h3 {
                     font-size: 1.75rem;
                 }
+                .reviewMachine__padding--height {
+                    padding-bottom: 42px;
+                }
+                .col-right__item {
+                    padding-bottom: 16px;
+                }
             }
         }
         
@@ -1281,6 +1312,9 @@
                 }
             }
             @media screen and (max-width:576px) {
+                .reviewMachineNext__padding--height {
+                    padding-bottom: 56px;
+                }
                 h3 {
                     font-size: 1.75rem;
                 }

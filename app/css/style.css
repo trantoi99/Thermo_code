@@ -147,6 +147,8 @@ header .col-md-7 img {
   right: 25%; }
 
 @media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 3rem; }
   header .row {
     text-align: center;
     justify-content: center; }
@@ -155,11 +157,15 @@ header .col-md-7 img {
   header .col-md-7 img {
     position: unset; }
   header .col-md-5 {
+    padding-bottom: 32px; }
+  header .text-des__padding {
     padding-bottom: 32px; } }
 
 @media screen and (max-width: 576px) {
   header .text-title__padding {
-    padding-top: 60px; } }
+    padding-top: 60px; }
+  header h1 {
+    font-size: 2.5rem; } }
 
 .section_min {
   background-color: #f3f4fa; }
@@ -190,8 +196,9 @@ header .col-md-7 img {
     .section_min .flex-start,
     .section_min .flex-end,
     .section_min .flex-center {
-      text-align: center;
-      justify-content: center; } }
+      text-align: left;
+      justify-content: flex-start;
+      padding-bottom: 5px; } }
 
 .btn-danger {
   width: 16rem;
@@ -360,6 +367,19 @@ header .col-md-7 img {
     font-size: 1.5rem; }
   .section_problem .ml-center {
     margin-left: 0; } }
+
+@media screen and (max-width: 340px) {
+  .section_problem .dflex {
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
+    .section_problem .dflex .col-md-1 {
+      flex: 0 0 100%;
+      max-width: 100%; }
+    .section_problem .dflex .col-md-11 {
+      flex: 0 0 100%;
+      max-width: 100%; } }
 
 .section_Banner {
   background-size: cover;
@@ -741,7 +761,6 @@ section a:hover {
     padding-bottom: 40px; } }
 
 .section_Banner--Middle {
-  min-height: 447px;
   height: 50vh;
   background-size: cover;
   background-image: url("img/ImgChild.png");
@@ -1041,7 +1060,11 @@ section a:hover {
       padding-bottom: 24px; } }
   @media only screen and (max-width: 576px) {
     .reviewMachine h3 {
-      font-size: 1.75rem; } }
+      font-size: 1.75rem; }
+    .reviewMachine .reviewMachine__padding--height {
+      padding-bottom: 42px; }
+    .reviewMachine .col-right__item {
+      padding-bottom: 16px; } }
 
 .reviewMachine_next .reviewMachineNext__padding--height {
   padding-top: 80px;
@@ -1070,6 +1093,8 @@ section a:hover {
     padding-bottom: 24px; } }
 
 @media screen and (max-width: 576px) {
+  .reviewMachine_next .reviewMachineNext__padding--height {
+    padding-bottom: 56px; }
   .reviewMachine_next h3 {
     font-size: 1.75rem; }
   .reviewMachine_next .row {
